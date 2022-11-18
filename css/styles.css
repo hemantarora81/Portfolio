@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+body{
+    /* background-color: #967E76; */
+    margin: 0;
+    font-family: 'Monserrat',sans-serif;
+    text-align: center;
+ 
+}
+/* Front Page */
+#front-page{
+    background-color: #B7C4CF;
+}
+/* Headline */
+.headline{
+    background-color: #61542f;
+    padding: 5px;
+   
+}
+.welcome-heading{
+    font-size: 20px;
+    /* color:#fff; */
+    
+}
+.welcome-heading:hover{
+    /* color: #bb93fc; */
+    text-shadow: 2px 2px #fff;
+}
+/* Navigation bar */
+.navbar{
+    padding: 2rem 3rem 3rem 4.5rem;
+    text-align: center;
+}
+.nav-item{
+    padding: 0 18px;
+}
+.navbar-brand{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding-right: 30px;
+}
+.nav-link{
+    font-size: 1.2rem;
+    color: #fff;
+}
+/* First Container FLuid */
+.container-fluid{
+    padding-bottom: 9rem;
+    line-height: 1.5rem;
+}
+
+/* Title Text */
+.big-heading{
+    /* line-height: 3.5; */
+    position: relative;
+    margin-top: 50px;
+    padding-bottom: 117px;
+    padding-top: 64px;
+    right: 90px;
+    font-weight: bolder;
+    color: #484848;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+  cursor: pointer
+}
+.big-heading span{
+    transition: .5s linear;
+}
+.big-heading:hover{
+    font-size: 40px;
+    color: #994d00;
+    text-shadow: 2px 2px #fff;
+}
+.big-heading:hover span:nth-child(1){
+    margin-right: 2px
+  }
+  .big-heading:hover span:nth-child(1):after{
+    content: "";
+  }
+  .big-heading:hover span:nth-child(2){
+    margin-left: 30px
+  }
+  .big-heading:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+  }
+.second-line-title{
+    /* font-size: 20px; */
+    font-weight: bolder;
+}
+.second-line-title:hover{
+    font-size: 50px;
+    color: #994d00;
+    text-shadow: 2px 2px #fff;
+}
+/* Rotating Words */
+.rotate-words{
+    display: inline;
+    margin-left: 10px;
+}
+.rotate-words span{
+    /* width: 10px; */
+    position: absolute;
+    background-color: #bb93fc;
+    padding-inline: 10px;
+    opacity: 0;
+    transform-origin: 10% 75%;
+    animation: rotateWords 12s var(--d) linear infinite;
+}
+@keyframes rotateWords{
+    5%{
+        opacity: 1;
+    }
+    10%,20%{
+        opacity: 1;
+        transform: rotate(3deg);
+    }
+    15%{
+        transform: rotate(-1deg);
+    }
+    25%{
+        opacity: 0;
+        transform: translateY(90px)
+        rotate(10deg);
+    }
+}
+/* Title Image */
+.container{
+    position: relative;
+    text-align: center;
+  
+}
+.name{
+    position: absolute;
+    top: 80px;
+    text-align: left;
+    font-size: 25px;
+    left: 230px;
+    z-index: 1;
+}
+@media (min-width:1920px){
+    .name{
+        padding: 150px;
+        position: fixed;
+        margin-right: 130px;
+        left: 1100px;
+        /* margin-left: 30px; */
+        right: -1300px;
+        z-index: 1;
+        /* background-color: #61542f; */
+    }
+    
+}
+
+.iphone-img{
+    border-radius: 35px;
+    width: 200px;
+    /* height: 350px; */
+    /* position: absolute; */
+    z-index: 0;
+    margin-left: 180px;
+    /* margin: 20px 15px 10px ; */
+    /* padding-left: 50px; */
+
+  
+}
+/* Projects section */
+#projects{
+    /* margin-top: 9rem; */
+    /* text-align: center; */
+    line-height: 3.5rem;
+    background-color: #EEE3CB;
+}
+.project-heading{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+}
+.project-heading:hover{
+    color: #244c6d;
+    text-shadow:5px 5px #fff;
+}
+/* .row{
+    /* text-align: left; */
+    /* color: #fff;  
+} */
+.project-para{
+    padding: 30px 50px 10px 50px;
+    /* text-align: left; */
+    color: darkred;
+}
+.projects-img{
+    width: 200px;
+    height: 150px;
+  
+}
+.project-title{
+    /* text-align: center; */
+    color: black;
+    font-weight: bolder;
+}
+.link-project{
+    color: black;
+    text-decoration: underline;
+}
+/* .fourth{
+    text-align: center; 
+ } */
+/* .projects-img-four{
+    margin-top: 15px;
+    width: 200px;
+    height: 150px;
+    
+}
+.project-para-four{
+    padding-top: 30px;
+    color: darkred;
+    padding: 30px 430px 0px 430px;
+    /* padding-left: 50px; */
+    /* margin-left: 600px; */
+    /* margin-right: 600px; */
+    /* text-align: center; */
+/* }  */
+/* Skills Section */
+#skills{
+    background-color: #D7C0AE;
+}
+.skill-heading{
+ margin: 0px 0px 62px 0px;
+ padding-top: 22px;
+}
+.skills-heading{
+    font-weight: bolder;
+   
+}
+.skills-heading:hover{
+    color: #244c6d;
+    text-shadow:5px 5px #fff;
+}
+.skill-image{
+    width: 300px;
+    height: 300px;
+}
+.sidebtn{
+    color: black;
+}
+    
+/* Who I am? Section */
+#about{
+    background-color: #D7C0AE;
+}
+.about-heading{
+    padding-top: 3rem;
+    /* font-size: 60px; */
+    font-weight: bolder;
+}
+.about-heading:hover{
+    color: #244c6d;
+    text-shadow:5px 5px #fff;
+}
+.myphotos{
+   
+}
+.myphoto{
+    margin-top: 20px;
+   margin-bottom: 20px;
+   
+}
+.aboutme {
+    /* padding-top: 229px; */
+    text-align: left;
+    font-size: 20px;
+    color: darkred;
+}
+.aboutexplain{
+    padding-top: 100px;
+    font-family: 'Kanit', sans-serif;
+    color: #070f15;
+}
+/* Footer */
+#footer{
+    
+    background-color: #967E76;
+    height: 280px;
+}
+.social-icon{
+    position: relative;
+    top: 5rem;
+    /* padding-top: 5rem; */
+    margin: 15px;
+    font-size: 20px;
+    color: black;
+}
+.social-icons{
+    /* width: 30%; */
+    /* margin-left: 75px; */
+    background-color: #967E76;
+
+}
+.enquiry{
+ margin-left: 20px;
+ font-family: 'Kanit', sans-serif;
+ font-size: 20px;
+}
+label{
+    position: static;
+    line-height: 1.5;
+    /* margin-right: 30px; */
+}
+.contact{
+    font-size: 12px;
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 30px;
+    width: 400px;
+    border: 2px solid #967E76;
+    font-weight: bold;
+
+}
+.submit{
+   position: absolute;
+   left: 200px;
+}
+.copyright{
+  padding-top: 100px;
+  background-color: #967E76;
+}
+
+
+
+@media (max-width: 480px){
+    
+    .iphone-img{
+        border-radius: 30px;
+        width: 200px;
+        z-index: 0;
+        margin-left: -90px;
+    }
+    .name{
+        position: absolute;
+        width: 20px;
+        left: 87px;
+        font-size: 30px;
+
+        /* margin-left: -280px; */
+        /* padding-right: 300px; */
+        /* left: -153px; */
+     } 
+     .myphoto{
+        width: 294px;
+        text-align: center;
+        position: absolute;
+        margin-top: 19px;
+        margin-left: -107px;
+        /* position: absolute;
+        width: 320px;
+        height: 320px; */
+        /* left: -248px; */
+        /* height: 406px; */
+        /* padding-left: 10px; */
+        /* margin-left: 35px; */
+        /* text-align: center; */
+
+    }
+    .aboutexplain{
+        left: 33px;
+        position: relative;
+    }
+    .aboutme{
+        margin-top:327px;
+        padding: 10%;
+        font-size: 16px;
+    }
+   .big-heading{
+    font-size: 40px;
+    margin-left: 80px;
+   
+   }
+   .social-icons{
+    padding: 0;
+   }
+   .rotate-words{
+   font-size: 35px;
+   }
+   .row{
+    width: 320px; 
+    }  
+}
+@media (min-width: 768px) and (max-width: 1024px){
+   
+    .name{
+        margin-left: 178px;
+    }
+    .myphoto{
+        padding: 10%;
+    }
+    .aboutexplain{
+        padding: 10%;
+        text-decoration: double;
+        color: rgb(2, 1, 1);
+        font-family: 'Kanit', sans-serif;
+
+    }
+    .social-icons{
+        width: max-content;
+    }
+}
