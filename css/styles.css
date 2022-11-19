@@ -110,6 +110,9 @@ body{
     transform-origin: 10% 75%;
     animation: rotateWords 12s var(--d) linear infinite;
 }
+.contact{
+    font-family: 'Kanit', sans-serif;
+}
 @keyframes rotateWords{
     5%{
         opacity: 1;
@@ -327,6 +330,7 @@ label{
 .copyright{
   padding-top: 100px;
   background-color: #967E76;
+  font-family: 'Kanit', sans-serif;
 }
 
 
